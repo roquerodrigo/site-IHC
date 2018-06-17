@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso de especialização em drones - UNIFEI</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/unifei.html">UNIFEI</a></li>
+                <li class="nav-item"><a class="nav-link" href="/professores.html">Corpo Docente</a></li>
+                <li class="nav-item"><a class="nav-link" href="/faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div>
+    <div class="py-4">
+        <div class="container p-0">
+            <h3 class="display-4 mb-4">Inscreva-se</h3>
+            <p>Preencha seus dados que entraremos em contato!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <small id="emailHelp" class="form-text text-muted">Entraremos em contato por esse endereço.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="degree">Escolaridade</label>
+                        <select class="form-control" id="degree">
+                            <option disabled selected>Selecione uma opção</option>
+                            <option>Fundamental incompleto</option>
+                            <option>Fundamental completo</option>
+                            <option>Médio incompleto</option>
+                            <option>Médio completo</option>
+                            <option>Superior incompleto</option>
+                            <option>Superior completo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adddress">Endereço</label>
+                        <input type="text" class="form-control" id="adddress" placeholder="Endereço">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="why">Por que você quer entrar para o curso?</label>
+                        <textarea class="form-control" id="why" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="terms">
+                        <label class="form-check-label" for="terms">Confirmo a veracidade das informações inseridas</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr class="mt-4">
+
+    <footer>
+        <div class="p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span class="font-weight-bold">Campus Prof. José Rodrigues Seabra – Sede</span> <br><br>
+                        Av. BPS, 1303, Bairro Pinheirinho, Itajubá – MG <br>
+                        Telefone: (35) 3629 – 1101 <br>
+                        Fax: (35) 3622 – 3596 <br>
+                        Caixa Postal 50 <br>
+                        CEP: 37500 903
+                    </div>
+                    <div class="col-md-6">
+                        <span class="font-weight-bold">Campus Itabira</span> <br><br>
+                        Rua Irmã Ivone Drumond, 200 – Distrito Industrial II,Itabira – MG <br>
+                        Telefone: (31) 3839-0800 <br>
+                        CEP: 35903-087
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-2 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <a class="btn btn-lg text-dark" href="https://www.facebook.com/universidadefederaldeitajuba/" target="_blank"><i class="mdi mdi-facebook"></i></a>
+                            <a class="btn btn-lg text-dark" href="https://www.instagram.com/unifei_oficial/" target="_blank"><i class="mdi mdi-instagram"></i></a>
+                            <a class="btn btn-lg text-dark" href="https://twitter.com/unifei_oficial" target="_blank"><i class="mdi mdi-twitter"></i></a>
+                            <a class="btn btn-lg text-dark" href="https://www.youtube.com/user/rpunifei" target="_blank"><i class="mdi mdi-youtube"></i></a>
+                            <a class="btn btn-lg text-dark" href="https://www.unifei.edu.br" target="_blank"><i class="mdi mdi-web"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootbox.min.js"></script>
+
+<script !src="">
+  $('document').ready(function () {
+    $('#submit').click(function (e) {
+
+      e.preventDefault()
+
+      let error = document.createElement('audio')
+      error.setAttribute('src', '/music/error.mp3')
+
+      let success = document.createElement('audio')
+      success.setAttribute('src', '/music/success.mp3')
+
+      let name = $('#name').val()
+      let email = $('#email').val()
+      let degree = $('#degree').val()
+      let why = $('#why').val()
+      let terms = $('#terms').is(':checked')
+
+      if (!name) {
+        error.play()
+        bootbox.alert('Insira seu nome')
+        return
+      }
+
+      let validaEmail = /^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$/
+      if (!email || !(validaEmail.test(email))) {
+        error.play()
+        bootbox.alert('Insira seu email corretamente')
+        return
+      }
+
+      if (!degree) {
+        error.play()
+        bootbox.alert('Selecione sua escolaridade')
+        return
+      }
+      if (!why) {
+        error.play()
+        bootbox.alert('Escreva o motivo pelo qual você tem interesse pelo curso')
+        return
+      }
+
+      if (!terms) {
+        error.play()
+        bootbox.alert('Confirme a veracidade de suas informações')
+        return
+      }
+
+      success.play()
+
+      bootbox.alert('Em breve entraremos em contato com você!', function () {
+        window.location = '/'
+      })
+    })
+  })
+</script>
+</body>
+</html>

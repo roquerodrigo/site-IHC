@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@mdi/font": "^2.4.85",
+    "bootbox": "^4.4.0",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}
